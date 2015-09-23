@@ -1,8 +1,5 @@
 require 'data_mapper'
 
-
-
-
 if env = ENV['RACK_ENV'] == 'test'
   database = "postgres://localhost/bookmark_manager_test"
 else
@@ -12,6 +9,8 @@ end
 DataMapper.setup(:default, database)
 
 require './app/models/link'
+require './app/models/tag'
+
 
 DataMapper.finalize
 

@@ -6,4 +6,6 @@ include DataMapper::Resource
   property :title,  String
   property :url,    String
 
+  has n, :tags, through: Resource
+
 end
