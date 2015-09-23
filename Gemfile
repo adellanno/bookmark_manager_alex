@@ -9,4 +9,5 @@ group :test do
   gem 'rspec'
   gem 'capybara'
   gem 'launchy'
+  gem 'database_cleaner'
 end

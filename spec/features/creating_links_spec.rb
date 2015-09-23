@@ -2,7 +2,6 @@ feature 'Creating links' do
 
   scenario 'I can create a new link' do
     visit '/links/new'
-    save_and_open_page
     fill_in 'url',   with: 'http://www.zombo.com/'
     fill_in 'title', with: 'This is Zombocom'
     click_button 'Create link'
